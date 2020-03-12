@@ -9,7 +9,16 @@
 ### 수민: Delegate 패턴을 활용하는 경우를 예를 들어 설명
 
 ### 홍석: Singleton 패턴을 활용하는 경우를 예를 들어 설명
+(https://www.edwith.org/boostcourse-ios/lecture/16876/)
+(https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html)
 
+- 객체의 생성 과정 관여하는 패턴
+- 특정 클래스의 인스턴스가 오직 하나임을 보장하고(고정된 메모리) 이 인스턴스에 접근할 방법 제공(전역)
+- 애플이 제공하는 공식 문서 예시로, 응용 프로그램에서 다른 객체들에 사운드를 제공하는 클래스가 있다면, 싱글턴 패턴을 활용할 수 있다. (For example, if you have a class that provides sounds to other objects in an application, you might make it a singleton.)
+- 생성자가 여러 차례 호출되어도 실제로 메모리에 할당되는 객체는 하나이기 때문에 메모리 낭비를 방지할 수 있다.
+- 싱글턴으로 생성된 클래스의 인스턴스는 전역 인스턴스이기 때문에 (A singleton object provides a global point of access to the resources of its class.) 다른 클래스의 인스턴스들이 데이터를 공유하기 쉽다.
+- 싱글턴 인스턴스가 너무 많은 일을 하거나, 많은 데이터를 공유하면 다른 클래스 인스턴스들 간 결합도가 높아져 수정이 어려워지고 테스트하기 어려워진다.
+- 멀티스레드 환경에서 동시에 싱글턴 객체를 참조할 경우 원치 않은 결과를 가져올 수 있다. 어떤 디자인 패턴을 활용하더라도 항상 긍정적인 면과 위험성을 함께 고려하여 활용해야 된다. (edwith 부스트코스 2장 참조)
 
 
 ## 2020-03-05
