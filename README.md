@@ -4,7 +4,7 @@
 ## 2020-03-12
 
 
-### 지혜: instance 메서드와 class 메서드의 차이점 설명
+### 지혜: [instance 메서드와 class 메서드의 차이점 설명](https://www.zehye.kr/swift/2020/03/12/1swift_instance_class_method/)
 
 ### 홍석: Singleton 패턴을 활용하는 경우를 예를 들어 설명
 
