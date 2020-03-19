@@ -2,7 +2,7 @@
 
 ## 2020-03-19
 
-### 자혜: [KVO 동작 방식에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
+### 지혜: [KVO 동작 방식에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
 
 ### 홍석: Delegates와 Notification 방식의 차이점에 대해 설명하시오
 
