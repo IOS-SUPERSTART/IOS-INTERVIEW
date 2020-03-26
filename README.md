@@ -4,6 +4,12 @@
 
 ### 혜지: [Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오](https://github.com/khyeji98/interview-study#hashable)
 ### 홍석: [mutating 키워드에 대해 설명하시오](https://zeddios.tistory.com/258)
+구조체와 열거형은 값타입
+
+값타입 프로퍼티들은 해당 인스턴스 메소드 내에서 수정 불가
+
+그러나 mutating 사용하여 특정 메소드 내에서 구조체, 열거형의 프로퍼티 수정 가능
+
 ### 종현: 탈출 클로저에 대하여 설명하시오
 
 1. Closure의 의미
@@ -29,6 +35,28 @@
 ### 지혜: [KVO 동작 방식에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
 
 ### 홍석: [Delegates와 Notification 방식의 차이점에 대해 설명하시오](https://medium.com/@Alpaca_iOSStudy/delegation-notification-%EA%B7%B8%EB%A6%AC%EA%B3%A0-kvo-82de909bd29)
+Delegates와 Notification, 그리고 KVO 세가지 패턴 모두 특정 이벤트가 발생할 때 원하는 객체에 알려주어 해당되는 처리를 하는 방법을 가지고 있다.
+
+- Delegates 는 보통 protocol 을 정의하여 사용
+
+장점: 엄격한 Syntax, 로직 흐름 쉬움, 모니터링하는 외부 객체 필요없음
+
+단점: 많은 줄의 코드 필요, delegate 설정에 nil 들어가지 않게 주의, 많은 객체들에게 이벤트 알려주는 것이 어렵고 비효율적
+
+- Notification 은 Notification Center 라는 싱글턴 객체를 통해 이벤트들의 발생 여부를 옵저버를 등록한 객체들에게 Notification을 post 하는 방식
+
+장점: 쉽게 구현 가능, 다수 객체에 동시에 이벤트 발생 알림 등
+
+단점: key 값으로 Notification의 이름과 userInfo 를 서로 맞추기 때문에 컴파일 문제, 올바르게 userInfo 값 받아오는지 체크 불가
+
+추적 쉽지 않음, Notification post 이후 정보를 받을 수 없음
+
+KVO를 사용하는 경우는 (프로퍼티 단위의 변화 감지) 그 이유 명확
+
+Delegation 과 Notification 경우 
+
+이왕이면 프로토콜로 정의되어 있는 Delegation 을 웬만하면 사용하는 것이 좋다. (코드 읽기 쉽고 추적도 쉬워진다는 이유)
+
 
 ### 수민: 멀티 쓰레드로 동작하는 앱을 작성하고 싶을 때 고려할 수 있는 방식들을 설명하시오
 
