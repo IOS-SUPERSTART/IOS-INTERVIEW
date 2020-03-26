@@ -2,7 +2,7 @@
 
 ## 2020-03-26
 
-### 혜지: Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오
+### 혜지: [Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오](https://github.com/khyeji98/interview-study#hashable)
 ### 홍석: mutating 키워드에 대해 설명하시오
 ### 종현: 탈출 클로저에 대하여 설명하시오
 ### 수민: Extension에 대해 설명하시오
