@@ -3,8 +3,7 @@
 ## 2020-03-26
 
 ### 혜지: [Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오](https://github.com/khyeji98/interview-study#hashable)
-### 홍석: mutating 키워드에 대해 설명하시오
-(https://zeddios.tistory.com/258)
+### 홍석: mutating 키워드에 대해 설명하시오(https://zeddios.tistory.com/258)
 ### 종현: 탈출 클로저에 대하여 설명하시오
 
 1. Closure의 의미
@@ -29,8 +28,7 @@
 
 ### 지혜: [KVO 동작 방식에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
 
-### 홍석: Delegates와 Notification 방식의 차이점에 대해 설명하시오
-https://medium.com/@Alpaca_iOSStudy/delegation-notification-%EA%B7%B8%EB%A6%AC%EA%B3%A0-kvo-82de909bd29
+### 홍석: Delegates와 Notification 방식의 차이점에 대해 설명하시오(https://medium.com/@Alpaca_iOSStudy/delegation-notification-%EA%B7%B8%EB%A6%AC%EA%B3%A0-kvo-82de909bd29)
 
 ### 수민: 멀티 쓰레드로 동작하는 앱을 작성하고 싶을 때 고려할 수 있는 방식들을 설명하시오
 
