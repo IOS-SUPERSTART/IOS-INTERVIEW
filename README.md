@@ -5,6 +5,22 @@
 ### 혜지: [Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오](https://github.com/khyeji98/interview-study#hashable)
 ### 홍석: mutating 키워드에 대해 설명하시오
 ### 종현: 탈출 클로저에 대하여 설명하시오
+
+1. Closure의 의미
+ - Apple 공식 
+ - Closures are self-contained blocks of functionality that can be passed around and used in your code
+ - 클로저는 코드내에서 사용가능한 독립된 기능 블록이다.
+  { (parameters) -> return type in
+      statements
+  }
+  이런식으로 사용된다.
+2. Closure의 사용처 
+ - 제일 많이 사용되는 사용처
+ - 경험상 Api 호출할 때
+ - CustomView만들 때
+    init(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)? = nil)
+    이런식으로 우리가 만든 Custom View 도 설정 가능하다.
+
 ### 수민: Extension에 대해 설명하시오
 ### 지혜: [Class/struct/enum 차이점과 사용하는 나의 기준에 대해 설명하시오](https://www.zehye.kr/swift/2020/01/15/19swift_grammer12/)
 
