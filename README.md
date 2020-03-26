@@ -6,7 +6,7 @@
 ### mutating 키워드에 대해 설명하시오
 ### 탈출 클로저에 대하여 설명하시오
 ### Extension에 대해 설명하시오
-### 지혜: [Class/ struct/ enum 차이점과 사용하는 나의 기준에 대해 설명하시오](https://www.zehye.kr/swift/2020/01/15/19swift_grammer12/)
+### 지혜: [Class/struct/enum 차이점과 사용하는 나의 기준에 대해 설명하시오](https://www.zehye.kr/swift/2020/01/15/19swift_grammer12/)
 
 ## 2020-03-19
 
