@@ -18,6 +18,19 @@
 
 ### 종현: MVC 구조에 대해 블록 그림을 그리고, 각 역할과 흐름을 설명하시오
 
+![mvc](https://user-images.githubusercontent.com/59017672/77244438-24e30100-6c58-11ea-949b-c94951cb2056.jpg)
+
+M - Model : 소프트웨어에서 데이터를 의미
+V - View : 사용자에게 보여지는 부분을 의미
+C - Controller : 사용자 입력 받는 부분을 의미
+
+User -> C -> M -> C -> V -> User
+유저는 Controller를 통해 Application에 입력을 하고, Controller를 입력받은 부분을 Model에서 데이터 처리한후 Controller에서 View에 보여줘 유저에게 Response을 보여준다.
+
+Model : 예) NSObject
+View : 예) Storyboard, UIView
+Controller : 예) ViewController
+
 ### 혜지: [프로토콜이란 무엇인지 설명하시오](https://github.com/khyeji98/interview-study#프로토콜)
 
 
