@@ -4,7 +4,7 @@
 
 ### 홍석: 접근 제어자의 종류엔 어떤게 있는지 설명하시오
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
-### 혜지: 생성자(designated/convenience/required)의 차이점과 특징을 설명하시오
+### 혜지: 생성자(designated/convenience/required)의 차이점과 특징을 설명하시오(https://github.com/khyeji98/interview-study/blob/master/README.md#-생성자designatedconveniencerequired의-차이점과-특징을-설명하시오)
 ### 지혜: 프로토콜 지향 프로그래밍에 대해서 설명하시오
 
 ## 2020-03-26
