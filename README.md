@@ -39,7 +39,15 @@ self.view.addConstraint(centerY)
 3. Auto Layout Visual Format Language 
 
 https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
-### hugging, resistance에 대해서 설명하시오
+### 수민 : hugging, resistance에 대해서 설명하시오
+view 자체의 본질의 크기이고 기본적으로 제공되는 view 들이 width와 heigt을 가질 수 있는데 이는 두 priority가 intrinsicContentSize와 관련이 있어 제약이 걸려있습니다. 
+
+huggin은 최대 크기에 대한 제약, resistance는 최소 크기에 대한 제약이며
+
+hugging은 주어진크기보다 작아질 수 있다.
+
+resistance는 주어진 크기보다 커질 수 있다라 해석할 수 있습니다. 
+
 ### 혜지: [Intrinsic Size에 대해서 설명하시오](https://github.com/khyeji98/interview-study#-intrinsic-size에-대해서-설명하시오)
 
 ## 2020-04-02
