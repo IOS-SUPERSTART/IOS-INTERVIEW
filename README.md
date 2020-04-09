@@ -1,11 +1,19 @@
 # IOS-INTERVIEW
 
+## 2020-04-09
+
+### Safearea에 대해서 설명하시오
+### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
+### 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
+### hugging, resistance에 대해서 설명하시오
+### Intrinsic Size에 대해서 설명하시오
+
 ## 2020-04-02
 
 ### 홍석: 접근 제어자의 종류엔 어떤게 있는지 설명하시오
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
 ### 혜지: [생성자(designated/convenience/required)의 차이점과 특징을 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-생성자designatedconveniencerequired의-차이점과-특징을-설명하시오)
-### 지혜: 프로토콜 지향 프로그래밍에 대해서 설명하시오
+### 지혜: [프로토콜 지향 프로그래밍에 대해서 설명하시오](https://www.zehye.kr/ios/2020/04/03/12iOS_protocol_programming/)
 
 ## 2020-03-26
 
