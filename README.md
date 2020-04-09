@@ -9,7 +9,7 @@
 
 1. Anchor를 사용하는 방법
 
-"""
+```
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
 self.view.addSubview(subView)
@@ -19,17 +19,15 @@ subView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20.0).isActive
 subView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
 subView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
 subView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isActive = true
-"""
+```
 
 2. NSLayoutConstraint 를 사용하는 방법
-"""
+```
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
 subView.translatesAutoresizingMaskIntoConstraints = false
 self.view.addSubview(subView)
 
-//NSLayoutConstraint.activate([leading, top, bottom, left])
-let heightConstraint = NSLayoutConstraint.init(item: subView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
 let widthConstraint = NSLayoutConstraint.init(item: subView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
 subView.addConstraint(heightConstraint)
 subView.addConstraint(widthConstraint)
@@ -37,7 +35,7 @@ let centerX = NSLayoutConstraint.init(item: subView, attribute: .centerX, relate
 let centerY = NSLayoutConstraint.init(item: subView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 0)
 self.view.addConstraint(centerX)
 self.view.addConstraint(centerY)
-"""
+```
 
 3. Auto Layout Visual Format Language 
 
