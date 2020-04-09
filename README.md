@@ -46,6 +46,59 @@ https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
 
 ### 홍석: 접근 제어자의 종류엔 어떤게 있는지 설명하시오
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
+var value = "Hello"
+func b() -> String {
+    defer {
+        value.append("world")
+    }
+    return value
+}
+print("B : \(b())")
+
+value = "Hello"
+func c() -> String {
+    value.append("world")
+    return value
+}
+print("C : \(c())")
+
+value = "Hello"
+func d() -> String {
+    var f = value
+    value.append("world")
+    return f
+}
+print("D : \(d())")
+
+func e() {
+    do {
+        defer{
+            print("1")
+        }
+        defer{
+            print("2")
+        }
+        defer{
+            print("3")
+        }
+    }
+}
+print("E : 실행")
+e()
+print("E : 끝")
+func f() {
+    guard let fileURL = Bundle.main.url(forResource: "sample", withExtension: "txt") else {
+        return
+    }
+    do {
+        let content = try String(contentsOf: fileURL)
+        print("Content : \(content)")
+    }catch {
+        print("Something went wrong")
+    }
+}
+f()
+
 ### 혜지: [생성자(designated/convenience/required)의 차이점과 특징을 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-생성자designatedconveniencerequired의-차이점과-특징을-설명하시오)
 ### 지혜: [프로토콜 지향 프로그래밍에 대해서 설명하시오](https://www.zehye.kr/ios/2020/04/03/12iOS_protocol_programming/)
 
