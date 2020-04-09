@@ -6,21 +6,23 @@
 ### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
 ### 종현: 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
 
+
 1. Anchor를 사용하는 방법
 
+"""
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
 self.view.addSubview(subView)
  
- //NSLayoutConstraint.activate([leading, top, bottom, left])
 subView.translatesAutoresizingMaskIntoConstraints = false
 subView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20.0).isActive = true
 subView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
 subView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
 subView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isActive = true
+"""
 
 2. NSLayoutConstraint 를 사용하는 방법
-
+"""
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
 subView.translatesAutoresizingMaskIntoConstraints = false
@@ -35,19 +37,13 @@ let centerX = NSLayoutConstraint.init(item: subView, attribute: .centerX, relate
 let centerY = NSLayoutConstraint.init(item: subView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 0)
 self.view.addConstraint(centerX)
 self.view.addConstraint(centerY)
+"""
 
 3. Auto Layout Visual Format Language 
 
 https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
-### 수민 : hugging, resistance에 대해서 설명하시오
-view 자체의 본질의 크기이고 기본적으로 제공되는 view 들이 width와 heigt을 가질 수 있는데 이는 두 priority가 intrinsicContentSize와 관련이 있어 제약이 걸려있습니다. 
 
-huggin은 최대 크기에 대한 제약, resistance는 최소 크기에 대한 제약이며
-
-hugging은 주어진크기보다 작아질 수 있다.
-
-resistance는 주어진 크기보다 커질 수 있다라 해석할 수 있습니다. 
-
+### hugging, resistance에 대해서 설명하시오
 ### 혜지: [Intrinsic Size에 대해서 설명하시오](https://github.com/khyeji98/interview-study#-intrinsic-size에-대해서-설명하시오)
 
 ## 2020-04-02
