@@ -4,7 +4,41 @@
 
 ### Safearea에 대해서 설명하시오
 ### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
-### 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
+### 종현: 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
+
+1. Anchor를 사용하는 방법
+
+let subView = UIView.init()
+subView.backgroundColor = UIColor.red
+self.view.addSubview(subView)
+ 
+ //NSLayoutConstraint.activate([leading, top, bottom, left])
+subView.translatesAutoresizingMaskIntoConstraints = false
+subView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20.0).isActive = true
+subView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
+subView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
+subView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isActive = true
+
+2. NSLayoutConstraint 를 사용하는 방법
+
+let subView = UIView.init()
+subView.backgroundColor = UIColor.red
+subView.translatesAutoresizingMaskIntoConstraints = false
+self.view.addSubview(subView)
+
+//NSLayoutConstraint.activate([leading, top, bottom, left])
+let heightConstraint = NSLayoutConstraint.init(item: subView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
+let widthConstraint = NSLayoutConstraint.init(item: subView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
+subView.addConstraint(heightConstraint)
+subView.addConstraint(widthConstraint)
+let centerX = NSLayoutConstraint.init(item: subView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1.0, constant: 0)
+let centerY = NSLayoutConstraint.init(item: subView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 0)
+self.view.addConstraint(centerX)
+self.view.addConstraint(centerY)
+
+3. Auto Layout Visual Format Language 
+
+https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
 ### hugging, resistance에 대해서 설명하시오
 ### 혜지: [Intrinsic Size에 대해서 설명하시오](https://github.com/khyeji98/interview-study#-intrinsic-size에-대해서-설명하시오)
 
