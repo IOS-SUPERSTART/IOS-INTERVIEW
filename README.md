@@ -60,9 +60,7 @@ resistance는 주어진 크기보다 커질 수 있다라 해석할 수 있습�
 
 ## 2020-04-02
 
-### 홍석: 접근 제어자의 종류엔 어떤게 있는지 설명하시오
-## **접근레벨 (Access Levels)**
-[https://jusung.gitbook.io/the-swift-language-guide/language-guide/25-access-control](https://jusung.gitbook.io/the-swift-language-guide/language-guide/25-access-control)
+### 홍석: [접근 제어자의 종류엔 어떤게 있는지 설명하시오](https://jusung.gitbook.io/the-swift-language-guide/language-guide/25-access-control)
 
 Swift 5개의 접근레벨
 
