@@ -61,6 +61,23 @@ resistance는 주어진 크기보다 커질 수 있다라 해석할 수 있습�
 ## 2020-04-02
 
 ### 홍석: 접근 제어자의 종류엔 어떤게 있는지 설명하시오
+## **접근레벨 (Access Levels)**
+[https://jusung.gitbook.io/the-swift-language-guide/language-guide/25-access-control](https://jusung.gitbook.io/the-swift-language-guide/language-guide/25-access-control)
+
+Swift 5개의 접근레벨
+
+- Open & Public : Open과 Public 접근자 모두 선언한 모듈이 아닌 다른 모듈에서 사용가능. Open은 다른 모듈에서 오버라이드와 서브클래싱이 가능하지만, Public 접근자로 선언된 것은 다른 모듈에서는 오버라이드와 서브클래싱이 불가능.
+- Internal : 기본 접근레벨, 아무 접근레벨을 선언하지 않으면 Internal로 간주. Internal레벨로 선언되면 해당 모듈 전체에서 사용 가능.
+- File-private : 특정 엔티티를 선언한 파일 안에서만 사용 가능.
+- Private : 특정 엔티티가 선언된 괄호({}) 안에서만 사용 가능.
+
+접근레벨 가이드 원칙 (Guiding Principle of Access Levels)
+
+- Swift에서 접근 레벨은 더 낮은 레벨을 갖고 있는 다른 엔티티를 특정 엔티티에 선언해 사용할 수 없다는 일반 가이드 원칙
+- ex) public 변수는 더 낮은 레벨인 internal, File-private, private 타입에서 정의 불가
+
+접근레벨 3가지 유형: 기본 접근레벨, 단일 타겟 앱을 위한 접근레벨, 프레임워크를 위한 접근레벨
+
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
 ```
 var value = "Hello"
