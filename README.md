@@ -4,8 +4,6 @@
 
 ### 홍석: Safearea에 대해서 설명하시오
 
-## **Safe Area**
-
 - Safe Area를 사용하는 이유?
 
 아이폰X부터 적용된 노치 디자인에 맞춰 뷰의 컨텐츠와 컨트롤 부분이 올바르게 표시되고 간단히 탭 할 수 있어야 한다. Safe Area는 앱이 iPhoneX의 새로운 규격에 맞게 제대로 동작하는지 확인하기 위해 사용된다.
@@ -43,8 +41,8 @@
     bottomSubview.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     bottomSubview.heightAnchor.constraint(equalToConstant: 300).isActive = true
 
-https://devmjun.github.io/img/posts/SafeArea_2.png
-https://devmjun.github.io/img/posts/SafeArea_3.png
+<img src="https://devmjun.github.io/img/posts/SafeArea_2.png"></img>
+<img src="https://devmjun.github.io/img/posts/SafeArea_3.png"></img>
 
 UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: 
 
