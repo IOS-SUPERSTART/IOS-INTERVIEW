@@ -9,7 +9,6 @@
 아이폰X부터 적용된 노치 디자인에 맞춰 뷰의 컨텐츠와 컨트롤 부분이 올바르게 표시되고 간단히 탭 할 수 있어야 한다. Safe Area는 앱이 iPhoneX의 새로운 규격에 맞게 제대로 동작하는지 확인하기 위해 사용된다.
 <img src="https://t1.daumcdn.net/cfile/tistory/99DEF33D5B3F27C704"></img>
 
-
 - Swift에서 Safe Area 영역 값 확인, Safe Area 값을 확인하려면 #available(iOS 11.0, *) 적용
 
 ```
@@ -22,10 +21,7 @@
     }
 ```
 
-(출처: [https://faith-developer.tistory.com/139](https://faith-developer.tistory.com/139))
-
 - 예제
-
 
 상단
 
@@ -44,11 +40,8 @@
 <img src="https://devmjun.github.io/img/posts/SafeArea_2.png" width="300px" height="300px"></img>
 <img src="https://devmjun.github.io/img/posts/SafeArea_3.png" width="300px" height="300px"></img>
 
-UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: 
-
-UIView, UIViewController, UIScrollView, UITableView, UIColelctionView
-
-(자세한 내용은 [https://devmjun.github.io/archive/SafeArea_1](https://devmjun.github.io/archive/SafeArea_1) 참고)
+UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: UIView, UIViewController, UIScrollView, UITableView, UIColelctionView
+[https://devmjun.github.io/archive/SafeArea_1](https://devmjun.github.io/archive/SafeArea_1)
 
 ### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
 ### 종현: 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
