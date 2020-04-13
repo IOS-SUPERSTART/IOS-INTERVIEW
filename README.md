@@ -9,18 +9,20 @@
 - Safe Area를 사용하는 이유?
 
 아이폰X부터 적용된 노치 디자인에 맞춰 뷰의 컨텐츠와 컨트롤 부분이 올바르게 표시되고 간단히 탭 할 수 있어야 한다. Safe Area는 앱이 iPhoneX의 새로운 규격에 맞게 제대로 동작하는지 확인하기 위해 사용된다.
-https://t1.daumcdn.net/cfile/tistory/99DEF33D5B3F27C704
+<img src="https://t1.daumcdn.net/cfile/tistory/99DEF33D5B3F27C704"></img>
 
 
 - Swift에서 Safe Area 영역 값 확인, Safe Area 값을 확인하려면 #available(iOS 11.0, *) 적용
 
+```
     if #available(iOS 11.0, *) {
-        let window = UIApplication.shared.keyWindow
-        let topPadding = window?.safeAreaInsets.top
-        let bottomPadding = window?.safeAreaInsets.bottom
-        let leftPadding = window?.safeAreaInsets.left
-        let leftPadding = window?.safeAreaInsets.right
+        let window = UIApplication.shared.keyWindow
+        let topPadding = window?.safeAreaInsets.top
+        let bottomPadding = window?.safeAreaInsets.bottom
+        let leftPadding = window?.safeAreaInsets.left
+        let leftPadding = window?.safeAreaInsets.right
     }
+```
 
 (출처: [https://faith-developer.tistory.com/139](https://faith-developer.tistory.com/139))
 
@@ -28,12 +30,14 @@ https://t1.daumcdn.net/cfile/tistory/99DEF33D5B3F27C704
 
 
 상단
+
     topSubview.frame.origin.x = view.safeAreaInsets.left
     topSubview.frame.origin.y = view.safeAreaInsets.top
     topSubview.frame.size.width = view.bounds.width - view.safeAreaInsets.left - view.safeAreaInsets.right
     topSubview.frame.size.height = 300
 
 하단
+
     bottomSubview.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
     bottomSubview.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
     bottomSubview.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
