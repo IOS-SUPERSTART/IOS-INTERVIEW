@@ -2,7 +2,7 @@
 
 ## 2020-04-09
 
-### 홍석: Safearea에 대해서 설명하시오
+### 홍석: [Safearea에 대해서 설명하시오](https://devmjun.github.io/archive/SafeArea_1)
 
 - Safe Area를 사용하는 이유?
 
@@ -41,7 +41,6 @@
 <img src="https://devmjun.github.io/img/posts/SafeArea_3.png" width="300px" height="300px"></img>
 
 UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: UIView, UIViewController, UIScrollView, UITableView, UIColelctionView
-[https://devmjun.github.io/archive/SafeArea_1](https://devmjun.github.io/archive/SafeArea_1)
 
 ### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
 ### 종현: 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
