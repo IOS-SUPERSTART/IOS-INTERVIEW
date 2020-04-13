@@ -9,8 +9,8 @@
 - Safe Area를 사용하는 이유?
 
 아이폰X부터 적용된 노치 디자인에 맞춰 뷰의 컨텐츠와 컨트롤 부분이 올바르게 표시되고 간단히 탭 할 수 있어야 한다. Safe Area는 앱이 iPhoneX의 새로운 규격에 맞게 제대로 동작하는지 확인하기 위해 사용된다.
+https://t1.daumcdn.net/cfile/tistory/99DEF33D5B3F27C704
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e84702c-adec-4e38-a8a5-26975d4db164/99DEF33D5B3F27C704.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e84702c-adec-4e38-a8a5-26975d4db164/99DEF33D5B3F27C704.png)
 
 - Swift에서 Safe Area 영역 값 확인, Safe Area 값을 확인하려면 #available(iOS 11.0, *) 적용
 
@@ -26,23 +26,21 @@
 
 - 예제
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45967861-d3d0-4f62-affc-c5ac5c4302b7/0413130659704831.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45967861-d3d0-4f62-affc-c5ac5c4302b7/0413130659704831.jpg)
 
-왼쪽 이미지에서 상단뷰와 상단 노치, 하단뷰와 하단 홈버튼이 겹침.
-
-아래와 같은 방식으로 Safe Area 적용.
-
+상단
     topSubview.frame.origin.x = view.safeAreaInsets.left
     topSubview.frame.origin.y = view.safeAreaInsets.top
     topSubview.frame.size.width = view.bounds.width - view.safeAreaInsets.left - view.safeAreaInsets.right
     topSubview.frame.size.height = 300
 
-또는
-
+하단
     bottomSubview.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
     bottomSubview.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
     bottomSubview.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     bottomSubview.heightAnchor.constraint(equalToConstant: 300).isActive = true
+
+https://devmjun.github.io/img/posts/SafeArea_2.png
+https://devmjun.github.io/img/posts/SafeArea_3.png
 
 UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: 
 
