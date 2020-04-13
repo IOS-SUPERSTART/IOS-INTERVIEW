@@ -41,8 +41,8 @@
     bottomSubview.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     bottomSubview.heightAnchor.constraint(equalToConstant: 300).isActive = true
 
-<img src="https://devmjun.github.io/img/posts/SafeArea_2.png"></img>
-<img src="https://devmjun.github.io/img/posts/SafeArea_3.png"></img>
+<img src="https://devmjun.github.io/img/posts/SafeArea_2.png" width="300px" height="300px"></img>
+<img src="https://devmjun.github.io/img/posts/SafeArea_3.png" width="300px" height="300px"></img>
 
 UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: 
 
