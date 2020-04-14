@@ -47,7 +47,7 @@ UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: UIVie
 
 
 1. Anchor를 사용하는 방법
-
+- Anchor는 iOS 9.0이후부터 지원하는 AutoLayout방법
 ```
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
@@ -61,6 +61,8 @@ subView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isA
 ```
 
 2. NSLayoutConstraint 를 사용하는 방법
+- NSLayoutConstraint는 이전부터 지원하는 AutoLayout방법
+- Storyboard에서 Autolayout을 한다고 하면 이 방법이다.
 ```
 let subView = UIView.init()
 subView.backgroundColor = UIColor.red
@@ -116,6 +118,8 @@ Swift 5개의 접근레벨
 접근레벨 3가지 유형: 기본 접근레벨, 단일 타겟 앱을 위한 접근레벨, 프레임워크를 위한 접근레벨
 
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
+- defer란 현재 함수를 벗어날 때 실행한다는 예약이다. 
+- 아래는 예제문이다.
 ```
 var value = "Hello"
 func b() -> String {
@@ -126,6 +130,7 @@ func b() -> String {
 }
 print("B : \(b())")
 ```
+- 아래 두개의 구문의 비슷해보이지만 위의 defer구문과 같은 역활을 하는 함수를 아래꺼이다.
 ```
 value = "Hello"
 func c() -> String {
@@ -143,6 +148,8 @@ func d() -> String {
 }
 print("D : \(d())")
 ```
+- defer는 스택으로 되어있기에 들어온 순서의 역순으로 실행된다. 
+- 1,2,3이 들어왓으면 3,2,1로 나간다.
 ```
 func e() {
     do {
