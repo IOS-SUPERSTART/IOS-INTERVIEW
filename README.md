@@ -1,5 +1,23 @@
 # IOS-INTERVIEW
 
+## 2020-04-16
+
+### 홍석: [Bounds 와 Frame 의 차이점을 설명하시오](https://www.edwith.org/boostcourse-ios/lecture/16874/)
+
+- Bounds는 뷰자기 자신의 좌표계이다. 이 좌표를 수정하게 되면 자신 아래에 있는 서브뷰들이 영향을 받는다.
+- Frame은 자신의 슈퍼뷰에서 자신의 좌표를 나타내는 좌표계이다.
+- 차이점? 프레임은 슈퍼 뷰 기준, 바운드는 해당 뷰 기준
+<img src="https://www.edwith.org/viewer/image?src=https%3A%2F%2Fcphinf.pstatic.net%2Fmooc%2F20180102_77%2F1514826834081an6DQ_PNG%2F65_14.png" width=300 height=300></img>
+
+### 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오.
+
+### 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오.
+
+### scene delegate에 대해 설명하시오.
+
+### 앱이 In-Active 상태가 되는 시나리오를 설명하시오.
+
+
 ## 2020-04-09
 
 ### 홍석: [Safearea에 대해서 설명하시오](https://devmjun.github.io/archive/SafeArea_1)
