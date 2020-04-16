@@ -7,7 +7,8 @@
 - Bounds는 뷰자기 자신의 좌표계이다. 이 좌표를 수정하게 되면 자신 아래에 있는 서브뷰들이 영향을 받는다.
 - Frame은 자신의 슈퍼뷰에서 자신의 좌표를 나타내는 좌표계이다.
 - 차이점? 프레임은 슈퍼 뷰 기준, 바운드는 해당 뷰 기준
-<img src="https://www.edwith.org/viewer/image?src=https%3A%2F%2Fcphinf.pstatic.net%2Fmooc%2F20180102_77%2F1514826834081an6DQ_PNG%2F65_14.png"></img>
+
+<img src="https://cphinf.pstatic.net/mooc/20180102_77/1514826834081an6DQ_PNG/65_14.png"></img>
 
 ### 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오.
 
