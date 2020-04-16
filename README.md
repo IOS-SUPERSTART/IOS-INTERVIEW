@@ -136,6 +136,31 @@ Swift 5개의 접근레벨
 
 접근레벨 3가지 유형: 기본 접근레벨, 단일 타겟 앱을 위한 접근레벨, 프레임워크를 위한 접근레벨
 
+- 예시
+```
+public class SomePublicClass {                  // explicitly public class
+    public var somePublicProperty = 0            // explicitly public class member
+    var someInternalProperty = 0                 // implicitly internal class member
+    fileprivate func someFilePrivateMethod() {}  // explicitly file-private class member
+    private func somePrivateMethod() {}          // explicitly private class member
+}
+
+class SomeInternalClass {                       // implicitly internal class
+    var someInternalProperty = 0                 // implicitly internal class member
+    fileprivate func someFilePrivateMethod() {}  // explicitly file-private class member
+    private func somePrivateMethod() {}          // explicitly private class member
+}
+
+fileprivate class SomeFilePrivateClass {        // explicitly file-private class
+    func someFilePrivateMethod() {}              // implicitly file-private class member
+    private func somePrivateMethod() {}          // explicitly private class member
+}
+
+private class SomePrivateClass {                // explicitly private class
+    func somePrivateMethod() {}                  // implicitly private class member
+}
+```
+
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
 - defer란 현재 함수를 벗어날 때 실행한다는 예약이다. 
 - 아래는 예제문이다.
