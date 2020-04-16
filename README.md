@@ -160,6 +160,7 @@ private class SomePrivateClass {                // explicitly private class
     func somePrivateMethod() {}                  // implicitly private class member
 }
 ```
+-> [더 자세한 예시](https://zeddios.tistory.com/383)
 
 ### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
 - defer란 현재 함수를 벗어날 때 실행한다는 예약이다. 
