@@ -14,7 +14,7 @@
 
 ### 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오.
 
-### scene delegate에 대해 설명하시오.
+### 혜지: [scene delegate에 대해 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-scene-delegate에-대해-설명하시오)
 
 ### 앱이 In-Active 상태가 되는 시나리오를 설명하시오.
 
