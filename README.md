@@ -144,7 +144,7 @@ self.view.addConstraint(centerX)
 self.view.addConstraint(centerY)
 ```
 
-3. Auto Layout Visual Format Language 
+3. Auto Layout Visual Format Language -> 안쓴다. 쓴다면 그 사람은 
 
 https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
 
