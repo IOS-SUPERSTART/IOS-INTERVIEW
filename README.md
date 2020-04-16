@@ -10,13 +10,13 @@
 
 <img src="https://cphinf.pstatic.net/mooc/20180102_77/1514826834081an6DQ_PNG/65_14.png"></img>
 
-### 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오.
+### 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오
 
-### 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오.
+### 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오
 
-### 혜지: [scene delegate에 대해 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-scene-delegate에-대해-설명하시오)
+### 혜지: [scene delegate에 대해 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-scene-delegate에-대해-설명하시오)
 
-### 앱이 In-Active 상태가 되는 시나리오를 설명하시오.
+### 지혜: [앱이 In-Active 상태가 되는 시나리오를 설명하시오](https://www.zehye.kr/ios/2020/04/16/11iOS_application_state/)
 
 
 ## 2020-04-09
