@@ -12,7 +12,54 @@
 
 ### 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오
 
-### 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오
+### 종현 : 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오
+
+- 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오.
+
+https://developer.apple.com/documentation/uikit/app_and_environment
+
+- 포어그라운드에 있을 때는 iOS가 못만드는걸 제외하고 제약사항이 없다. 
+
+- background에 있을 때 
+* Audio communication using AirPlay, or Picture in Picture video.
+* Location-sensitive services for users.
+* Voice over IP.
+* Communication with an external accessory.
+* Communication with Bluetooth LE accessories, or conversion of the device into a Bluetooth LE accessory. 
+* Regular updates from a server.
+* Support for Apple Push Notification service (APNs).
+- 이 것들을 제외하고는 background 에선 실행을 시킬 순 있지만 언제나 메모리 부족으로 종료될 수 있다.
+
+- 상태 변화에 따라 다른 동작을 처리하기 위한  Delegate Method는 자신이 어떤 방식으로 만드는 지에 따라 다르다.
+
+- scene Delegate를 사용한다면
+```
+func sceneWillResignActive(_ scene: UIScene) {}
+func sceneWillEnterForeground(_ scene: UIScene) {}
+func sceneDidEnterBackground(_ scene: UIScene) {}
+func sceneDidBecomeActive(_ scene: UIScene) {}
+func sceneDidDisconnect(_ scene: UIScene) {}
+```
+- sceneWillResignActive -> inactive
+- sceneDidEnterBackground -> background
+- sceneWillEnterForeground -> foreground
+- sceneDidBecomeActive -> active
+
+- scene Delegate를 사용하지 않는다면 
+```
+func applicationWillResignActive(_ application: UIApplication) {}
+func applicationDidEnterBackground(_ application: UIApplication) {}
+func applicationWillEnterForeground(_ application: UIApplication) {}
+func applicationDidBecomeActive(_ application: UIApplication) {}
+func applicationWillTerminate(_ application: UIApplication) {}
+```
+- applicationWillResignActive -> inactive
+- applicationDidEnterBackground -> background
+- applicationWillEnterForeground -> foreground
+- applicationDidBecomeActive -> active
+
+- inactive + active = foreground 이라고 한다.
+
 
 ### 혜지: [scene delegate에 대해 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-scene-delegate에-대해-설명하시오)
 
