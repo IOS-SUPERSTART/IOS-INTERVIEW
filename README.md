@@ -4,7 +4,23 @@
 
 ### NSOperationQueue 와 GCD Queue 의 차이점을 설명하시오.
 
-### GCD API 동작 방식과 필요성에 대해 설명하시오.
+### 홍석: [GCD API 동작 방식과 필요성에 대해 설명하시오](https://baked-corn.tistory.com/134)
+애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
+
+- `GCD`는 시스템의 유닉스 레벨의 수준에서 직접적으로 상호작용하는 저수준의 C api
+- `Operation`은 Objective-C api입니다.
+- 그렇기 때문에 `Operation`은 보다 저수준에서 동작하는 `GCD`보다 상대적으로 느릴 수 밖에 없다.
+
+**GCD와 Operation Queue와의 차이점**
+
+- `Operation Queue`에서는 동시에 실행할 수 있는 연산(Operation)의 최대 수를 지정할 수 있습니다.
+- `Operation Queue`에서는 KVO(Key Value Observing)을 사용할 수 있는 많은 프로퍼티들이 있습니다.
+- `Operation Queue`에서는 연산(Operation)을 일시 중지, 다시 시작 및 취소를 할 수 있습니다.
+
+**언제 사용해야 할까요?**
+
+- **`Operation Queue`** : 비동기적으로 실행되어야 하는 작업을 객체 지향적인 방법으로 사용하는 데 적합합니다. KVO(key Value Observing)를 사용해 작업 진행 상황을 감시하는 방법이 필요할 때도 적합합니다.
+- **`GCD`** : 작업이 복잡하지 않고 간단하게 처리하거나 특정 유형의 시스템 이벤트를 비동기적으로 처리할 때 적합합니다. 예를 들면 타이머, 프로세스 등의 관련 이벤트입니다.
 
 ### 자신만의 Custom View를 만들려면 어떻게 해야하는지 설명하시오.
 
