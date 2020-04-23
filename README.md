@@ -23,6 +23,8 @@
 - **`GCD`** : 작업이 복잡하지 않고 간단하게 처리하거나 특정 유형의 시스템 이벤트를 비동기적으로 처리할 때 적합합니다. 예를 들면 타이머, 프로세스 등의 관련 이벤트입니다.
 
 ### 수민: 자신만의 Custom View를 만들려면 어떻게 해야하는지 설명하시오.
+[customView 만들기](https://seonift.github.io/2018/05/23/Swift-%EC%BB%A4%EC%8A%A4%ED%85%80-UIView-%EC%A0%9C%EC%9E%91%ED%95%98%EA%B8%B0-with-Xib/)
+커스텀뷰를 만드는 이유는 View마다 레이아웃을 따로 만들게 되면 view의 재사용에 용이? 하고 관리면에서 편리?하기 때문?에 커스텀뷰를 만들어 사용하게 되는데 cutomView를 만드는 방법은 기본적으로 swift 파일과 User Interface에 위치해있는 xib파일을 생성 한 후에 xib 파일에서 레아웃을 제작 한 후 swift 과 class를 연결해주어 xib가 생성한 swift 파일을 바라보게 하면 된다. 
 
 ### iOS 앱을 만들고, User Interface를 구성하는 데 필수적인 프레임워크 이름은 무엇인가? UIKit
 
