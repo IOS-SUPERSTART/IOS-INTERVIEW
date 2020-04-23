@@ -22,9 +22,10 @@
 - **`Operation Queue`** : 비동기적으로 실행되어야 하는 작업을 객체 지향적인 방법으로 사용하는 데 적합합니다. KVO(key Value Observing)를 사용해 작업 진행 상황을 감시하는 방법이 필요할 때도 적합합니다.
 - **`GCD`** : 작업이 복잡하지 않고 간단하게 처리하거나 특정 유형의 시스템 이벤트를 비동기적으로 처리할 때 적합합니다. 예를 들면 타이머, 프로세스 등의 관련 이벤트입니다.
 
-### 자신만의 Custom View를 만들려면 어떻게 해야하는지 설명하시오.
+### 수민: 자신만의 Custom View를 만들려면 어떻게 해야하는지 설명하시오.
 
 ### iOS 앱을 만들고, User Interface를 구성하는 데 필수적인 프레임워크 이름은 무엇인가? UIKit
+
 
 ### 혜지: [Foundation Kit은 무엇이고 포함되어 있는 클래스들은 어떤 것이 있는지 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-foundation-kit은-무엇이고-포함되어-있는-클래스들은-어떤-것이-있는지-설명하시오)
 
