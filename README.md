@@ -2,7 +2,9 @@
 
 ## 2020-04-23
 
-### NSOperationQueue 와 GCD Queue 의 차이점을 설명하시오.
+### 지혜: [NSOperationQueue 와 GCD Queue 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/23/11iOS_GCD_NSOperation_queue/)
+
+- 추가로 참고할 자료: [바로가기](https://www.zehye.kr/ios/2020/04/10/11iOS_GCD/)
 
 ### 홍석: [GCD API 동작 방식과 필요성에 대해 설명하시오](https://baked-corn.tistory.com/134)
 애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
