@@ -31,7 +31,88 @@
 ### 혜지: [Foundation Kit은 무엇이고 포함되어 있는 클래스들은 어떤 것이 있는지 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-foundation-kit은-무엇이고-포함되어-있는-클래스들은-어떤-것이-있는지-설명하시오)
 
 ### Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
+Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
 
+1. Delegate 란
+    - Delegate란 대신 실행이 되는 것을 말한다. 말로 하면 이해가 잘 안갈테니 코드를 보자.
+    - ViewController1에서 하지 못하는 일을 ViewController2에서 시키고 있다. 
+```
+protocol ItemDelegate {
+    func selectItem(int:itemId)
+}
+
+class AViewController: UIViewController, SDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let vc:BViewController = (self.storyboard?.instantiateViewController(identifier: "BViewController") as? BViewController)!
+        vc.delegate = self
+        self.addChild(vc)
+    }
+    
+    func Sample() { }
+}
+
+class BViewController: UIViewController {
+    var delegate:SDelegate?
+   
+}
+
+```
+2. retain 이란.
+참고 : https://baked-corn.tistory.com/30
+우선 아래 코드를 보자
+
+```
+    class TestClass{
+        var testClass: TestClass? = nil
+        init(){
+            print("init")
+        }
+        deinit{
+            print("deinit")
+        }
+    }
+```
+위 클래스가 있다.
+```
+var testClass1: TestClass? = TestClass()
+testClass1 = nil
+```
+위 클래스를 생성하고 nil 로 해제해주면 
+init
+deinit
+이 출력된다.
+```
+var testClass1: TestClass? = TestClass()
+var testClass2: TestClass? = TestClass()
+testClass1?.testClass = testClass2
+testClass2?.testClass = testClass1
+testClass1 = nil
+testClass2 = nil
+```
+위에 서로 testClass.testClass에 넣어주면 deinit이 나오지 않는다.
+왜냐면 강한 참조를 했기때문에 testClass.testClass가 해제되지 않았기때문에 testClass 는 아직 참조를 가지고 있다. 
+저 코드가 메모리의 문제가 없으려면 중간에 코드를 추가해야한다.
+```
+testClass1?.testClass = testClass2
+testClass2?.testClass = testClass1
+testClass1?.testClass = nil
+testClass2?.testClass = nil
+testClass1 = nil
+testClass2 = nil
+```
+이렇게 하면 
+init
+init
+deinit
+deinit
+이 출력된다.
+
+3. 위 두가지를 종합해 봤을 때,
+AViewController를 해제하더라도, deinit이 나오지 않는다.
+AViewController.child에 BViewController 가 참조되고 있고, 이 child는 viewcontroller에서 removefromParent해주기 전까지 남아있기때문에 해제되지 않는다.
+<img width="264" alt="스크린샷 2020-04-22 오후 3 45 38" src="https://user-images.githubusercontent.com/59017672/79949342-6281b680-84b0-11ea-89d0-f60e31e240d1.png">
+를 보면 3번 왔다 갔다 하면 이렇게 3개가 없어지지 않았다고 !!!! 오류를 뿜어내고 있다. 
 
 ## 2020-04-16
 
