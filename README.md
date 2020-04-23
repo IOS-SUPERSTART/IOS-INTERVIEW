@@ -1,5 +1,17 @@
 # IOS-INTERVIEW
 
+## 2020-04-30
+
+NotificationCenter 동작 방식과 활용 방안에 대해 설명하시오.
+
+UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?
+
+TableView를 동작 방식과 화면에 Cell을 출력하기 위해 최소한 구현해야 하는 DataSource 메서드를 설명하시오.
+
+하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
+
+App Bundle의 구조와 역할에 대해 설명하시오.
+
 ## 2020-04-23
 
 ### 지혜: [NSOperationQueue 와 GCD Queue 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/23/11iOS_GCD_NSOperation_queue/)
@@ -32,8 +44,7 @@
 
 ### 혜지: [Foundation Kit은 무엇이고 포함되어 있는 클래스들은 어떤 것이 있는지 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-foundation-kit은-무엇이고-포함되어-있는-클래스들은-어떤-것이-있는지-설명하시오)
 
-### Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
-Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
+### 종현: Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
 
 1. Delegate 란
     - Delegate란 대신 실행이 되는 것을 말한다. 말로 하면 이해가 잘 안갈테니 코드를 보자.
