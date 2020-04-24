@@ -32,30 +32,27 @@ App Bundle의 구조와 역할에 대해 설명하시오.
 
 ### 홍석: [GCD API 동작 방식과 필요성에 대해 설명하시오](https://baked-corn.tistory.com/134)
 
-- 동작방식: 프로그래머가 실행할 태스크(작업)을 생성하고 Dispatch Queue에 추가하면 GCD는 태스크(작업)에 맞는 스레드를 자동으로 생성해서 실행하고 작업이 종료되면 해당 스레드를 제거합니다.
-
+**동작방식** 
+- 프로그래머가 실행할 태스크(작업)을 생성하고 Dispatch Queue에 추가하면, GCD는 태스크(작업)에 맞는 스레드를 자동 생성해서 실행하고, 작업이 종료되면 해당 스레드 제거
 - 디스패치 대기열(Dispatch Queue)은 GCD 기술 일부, Serial 과 Concurrent 2가지 종류
 1. Serial Dispatch Queue는 한 번에 하나의 작업만을 실행
 2. Concurrent Dispatch Queue는 이미 시작된 작업이 완료될 때까지 기다리지 않고 가능한 많은 작업을 진행
-
 - 디스패치 소스 (Dispatch Source): 특정 유형의 시스템 이벤트 정보를 캡슐화하고, 해당 이벤트가 발생할 때마다 특정 클로저(블록) 객체 혹은 기능을 디스패치 대기열(Dispatch Queue)에 전달
 
-애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
-
-- `GCD`는 시스템의 유닉스 레벨의 수준에서 직접적으로 상호작용하는 저수준의 C api
-- `Operation`은 Objective-C api입니다.
-- 그렇기 때문에 `Operation`은 보다 저수준에서 동작하는 `GCD`보다 상대적으로 느릴 수 밖에 없다.
-
-**GCD와 Operation Queue와의 차이점**
-
-- `Operation Queue`에서는 동시에 실행할 수 있는 연산(Operation)의 최대 수를 지정할 수 있습니다.
-- `Operation Queue`에서는 KVO(Key Value Observing)을 사용할 수 있는 많은 프로퍼티들이 있습니다.
-- `Operation Queue`에서는 연산(Operation)을 일시 중지, 다시 시작 및 취소를 할 수 있습니다.
-
 **언제 사용해야 할까요?**
-
 - **`Operation Queue`** : 비동기적으로 실행되어야 하는 작업을 객체 지향적인 방법으로 사용하는 데 적합합니다. KVO(key Value Observing)를 사용해 작업 진행 상황을 감시하는 방법이 필요할 때도 적합합니다.
 - **`GCD`** : 작업이 복잡하지 않고 간단하게 처리하거나 특정 유형의 시스템 이벤트를 비동기적으로 처리할 때 적합합니다. 예를 들면 타이머, 프로세스 등의 관련 이벤트입니다.
+
+**추가 내용**
+애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
+애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
+- `GCD`는 시스템의 유닉스 레벨 수준에서 직접적으로 상호작용하는 저수준 C api, `Operation`은 Objective-C api 
+- `Operation`은 보다 저수준에서 동작하는 `GCD`보다 상대적으로 느릴 수 밖에 없음
+- `GCD` 와 `Operation Queue` 차이점?  
+1. `Operation Queue` 에서는 동시에 실행할 수 있는 연산(Operation)의 최대 수 지정 가능
+2. `Operation Queue` 에서는 KVO 사용할 수 있는 많은 프로퍼티 존재
+3. `Operation Queue` 에서는 연산 일시 중지, 다시 시작 및 취소 가능
+
 
 ### 수민: [자신만의 Custom View를 만들려면 어떻게 해야하는지 설명하시오.](https://seonift.github.io/2018/05/23/Swift-%EC%BB%A4%EC%8A%A4%ED%85%80-UIView-%EC%A0%9C%EC%9E%91%ED%95%98%EA%B8%B0-with-Xib/)
 커스텀뷰를 만드는 이유는 View마다 레이아웃을 따로 만들게 되면 view의 재사용에 용이? 하고 관리면에서 편리?하기 때문?에 커스텀뷰를 만들어 사용하게 되는데 cutomView를 만드는 방법은 기본적으로 swift 파일과 User Interface에 위치해있는 xib파일을 생성 한 후에 xib 파일에서 레아웃을 제작 한 후 swift 과 class를 연결해주어 xib가 생성한 swift 파일을 바라보게 하면 된다. 그 후에는 탬플릿 클래스로 만들어서 상속하여 사용할 수도 있습니다. 
