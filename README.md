@@ -31,6 +31,15 @@ App Bundle의 구조와 역할에 대해 설명하시오.
 - 추가로 참고할 자료: [바로가기](https://www.zehye.kr/ios/2020/04/10/11iOS_GCD/)
 
 ### 홍석: [GCD API 동작 방식과 필요성에 대해 설명하시오](https://baked-corn.tistory.com/134)
+
+- 동작방식: 프로그래머가 실행할 태스크(작업)을 생성하고 Dispatch Queue에 추가하면 GCD는 태스크(작업)에 맞는 스레드를 자동으로 생성해서 실행하고 작업이 종료되면 해당 스레드를 제거합니다.
+
+- 디스패치 대기열(Dispatch Queue)은 GCD 기술 일부, Serial 과 Concurrent 2가지 종류
+1. Serial Dispatch Queue는 한 번에 하나의 작업만을 실행
+2. Concurrent Dispatch Queue는 이미 시작된 작업이 완료될 때까지 기다리지 않고 가능한 많은 작업을 진행
+
+- 디스패치 소스 (Dispatch Source): 특정 유형의 시스템 이벤트 정보를 캡슐화하고, 해당 이벤트가 발생할 때마다 특정 클로저(블록) 객체 혹은 기능을 디스패치 대기열(Dispatch Queue)에 전달
+
 애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
 
 - `GCD`는 시스템의 유닉스 레벨의 수준에서 직접적으로 상호작용하는 저수준의 C api
