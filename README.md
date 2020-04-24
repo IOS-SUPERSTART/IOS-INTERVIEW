@@ -44,8 +44,7 @@ App Bundle의 구조와 역할에 대해 설명하시오.
 - **`GCD`** : 작업이 복잡하지 않고 간단하게 처리하거나 특정 유형의 시스템 이벤트를 비동기적으로 처리할 때 적합합니다. 예를 들면 타이머, 프로세스 등의 관련 이벤트입니다.
 
 **추가 내용**
-애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
-애플은 `Operation`이 `GCD` 위에서 동작하게끔 설계, 그러므로 `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연중에 `GCD`를 사용하는 것과 같다.
+- `Operation`은 `GCD`를 상위 수준으로 추상화한 api, 즉 `Operation`을 사용하는 것은 은연 중 `GCD`를 사용하는 것과 같음
 - `GCD`는 시스템의 유닉스 레벨 수준에서 직접적으로 상호작용하는 저수준 C api, `Operation`은 Objective-C api 
 - `Operation`은 보다 저수준에서 동작하는 `GCD`보다 상대적으로 느릴 수 밖에 없음
 - `GCD` 와 `Operation Queue` 차이점?  
