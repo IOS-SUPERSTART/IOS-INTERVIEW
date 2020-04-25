@@ -10,7 +10,7 @@ UIWindow 객체의 역할은 무엇인가?
 
 UINavigationController 의 역할이 무엇인지 설명하시오.
 
-### 혜지: 모든 View Controller 객체의 상위 클래스는 무엇이고 그 역할은 무엇인가?
+### 혜지: [모든 View Controller 객체의 상위 클래스는 무엇이고 그 역할은 무엇인가?](https://github.com/khyeji98/interview-study/blob/master/README.md#-모든-view-controller-객체의-상위-클래스는-무엇이고-그-역할은-무엇인가)
 
 ## 2020-04-30
 
