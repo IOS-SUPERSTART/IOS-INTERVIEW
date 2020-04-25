@@ -16,7 +16,7 @@ UINavigationController 의 역할이 무엇인지 설명하시오.
 
 NotificationCenter 동작 방식과 활용 방안에 대해 설명하시오.
 
-### 혜지: UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?
+### 혜지: [UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?](https://github.com/khyeji98/interview-study/blob/master/README.md#-uikit-클래스들을-다룰-때-꼭-처리해야하는-애플리케이션-쓰레드-이름은-무엇인가)
 
 ### 지혜: TableView를 동작 방식과 화면에 Cell을 출력하기 위해 최소한 구현해야 하는 DataSource 메서드를 설명하시오.
 
