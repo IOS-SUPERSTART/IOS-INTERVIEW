@@ -4,7 +4,7 @@
 
 ### 지혜: View 객체에 대해 설명하시오.
 
-UIView 에서 Layer 객체는 무엇이고 어떤 역할을 담당하는지 설명하시오.
+### 종현 : UIView 에서 Layer 객체는 무엇이고 어떤 역할을 담당하는지 설명하시오.
 
 ### 홍석: [UIWindow 객체의 역할은 무엇인가?](https://zeddios.tistory.com/283)
 - UIWindow는 사용자 인터페이스에 배경(backdrop)을 제공하고, 중요한 이벤트 처리 행동(behaviors)을 제공하는 객체
@@ -42,7 +42,7 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 
 하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
 
-App Bundle의 구조와 역할에 대해 설명하시오.
+### 종현 : App Bundle의 구조와 역할에 대해 설명하시오.
 
 ## 2020-04-23
 
