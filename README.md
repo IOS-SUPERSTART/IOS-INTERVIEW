@@ -21,17 +21,17 @@ UINavigationController 의 역할이 무엇인지 설명하시오.
 
 ### 홍석: NotificationCenter 동작 방식과 활용 방안에 대해 설명하시오.
 
-- 동작방식 
+- 동작방식 : 
 특정 객체가 NotificationCenter에 등록된 Event를 발생시키면, 해당 Event를 처리할 것이라고 등록된 Observer들이 Event에 대한 행동을 취하는 것이 NotificationCenter가 동작하는 방식. 이렇게 특정 객체가 Event를 발생시키는 것을 Post라고 한다.
 
-- [예제](https://baked-corn.tistory.com/42)
+- [예제](https://baked-corn.tistory.com/42) : 
 첫번째 뷰컨트롤러에서 특정 버튼 누르면, 두번째 뷰컨에 있는 레이블 숨기고, 세번째 뷰컨에 있는
 레이블 표시하는 등, 다수의 객체들에게 동시에 이벤트의 발생을 알릴 수 있다.
 
-- 활용방안
+- 활용방안 : 
 로그인의 상태가 변하여 많은 뷰들을 업데이트해야 하는 경우에는 Notification이 적절할 것으로 생각된다.
 
-- Delegate 와 차이점
+- Delegate와의 차이점 : 
 Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면, NotificationCenter는 어플리케이션 어느 곳에서, 어느 객체와도 상호작용을 할 수 있다. NotificationCenter는 단순한 Event를 다수의 객체에 동시에 알리고자 할 때 활용하면 좋겠지만, 그외에는 프로토콜을 정의하여 사용하는 Delegate 패턴을 사용하는 것이 더 좋을 것이다. (조금의 노력을 들여서 Delegate로 연결을 하면 코드가 읽기도 쉽고 추적이 쉬워진다)
 
 
