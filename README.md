@@ -4,7 +4,7 @@
 
 ### 지혜: View 객체에 대해 설명하시오.
 
-### 종현 : UIView 에서 Layer 객체는 무엇이고 어떤 역할을 담당하는지 설명하시오.
+### 종현 : [UIView 에서 Layer 객체는 무엇이고 어떤 역할을 담당하는지 설명하시오.](https://znf.kr/post/2/)
 
 ### 홍석: [UIWindow 객체의 역할은 무엇인가?](https://zeddios.tistory.com/283)
 - UIWindow는 사용자 인터페이스에 배경(backdrop)을 제공하고, 중요한 이벤트 처리 행동(behaviors)을 제공하는 객체
@@ -81,88 +81,8 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 
 ### 혜지: [Foundation Kit은 무엇이고 포함되어 있는 클래스들은 어떤 것이 있는지 설명하시오.](https://github.com/khyeji98/interview-study/blob/master/README.md#-foundation-kit은-무엇이고-포함되어-있는-클래스들은-어떤-것이-있는지-설명하시오)
 
-### 종현: Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.
+### 종현: [Delegate란 무언인가 설명하고, retain 되는지 안되는지 그 이유를 함께 설명하시오.](https://znf.kr/post/8/)
 
-1. Delegate 란
-    - Delegate란 대신 실행이 되는 것을 말한다. 말로 하면 이해가 잘 안갈테니 코드를 보자.
-    - ViewController1에서 하지 못하는 일을 ViewController2에서 시키고 있다. 
-```
-protocol ItemDelegate {
-    func selectItem(int:itemId)
-}
-
-class AViewController: UIViewController, SDelegate {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let vc:BViewController = (self.storyboard?.instantiateViewController(identifier: "BViewController") as? BViewController)!
-        vc.delegate = self
-        self.addChild(vc)
-    }
-    
-    func Sample() { }
-}
-
-class BViewController: UIViewController {
-    var delegate:SDelegate?
-   
-}
-
-```
-2. retain 이란.
-참고 : https://baked-corn.tistory.com/30
-우선 아래 코드를 보자
-
-```
-    class TestClass{
-        var testClass: TestClass? = nil
-        init(){
-            print("init")
-        }
-        deinit{
-            print("deinit")
-        }
-    }
-```
-위 클래스가 있다.
-```
-var testClass1: TestClass? = TestClass()
-testClass1 = nil
-```
-위 클래스를 생성하고 nil 로 해제해주면 
-init
-deinit
-이 출력된다.
-```
-var testClass1: TestClass? = TestClass()
-var testClass2: TestClass? = TestClass()
-testClass1?.testClass = testClass2
-testClass2?.testClass = testClass1
-testClass1 = nil
-testClass2 = nil
-```
-위에 서로 testClass.testClass에 넣어주면 deinit이 나오지 않는다.
-왜냐면 강한 참조를 했기때문에 testClass.testClass가 해제되지 않았기때문에 testClass 는 아직 참조를 가지고 있다. 
-저 코드가 메모리의 문제가 없으려면 중간에 코드를 추가해야한다.
-```
-testClass1?.testClass = testClass2
-testClass2?.testClass = testClass1
-testClass1?.testClass = nil
-testClass2?.testClass = nil
-testClass1 = nil
-testClass2 = nil
-```
-이렇게 하면 
-init
-init
-deinit
-deinit
-이 출력된다.
-
-3. 위 두가지를 종합해 봤을 때,
-AViewController를 해제하더라도, deinit이 나오지 않는다.
-AViewController.child에 BViewController 가 참조되고 있고, 이 child는 viewcontroller에서 removefromParent해주기 전까지 남아있기때문에 해제되지 않는다.
-<img width="264" alt="스크린샷 2020-04-22 오후 3 45 38" src="https://user-images.githubusercontent.com/59017672/79949342-6281b680-84b0-11ea-89d0-f60e31e240d1.png">
-를 보면 3번 왔다 갔다 하면 이렇게 3개가 없어지지 않았다고 !!!! 오류를 뿜어내고 있다. 
 
 ## 2020-04-16
 
@@ -180,53 +100,8 @@ AViewController.child에 BViewController 가 참조되고 있고, 이 child는 v
 그 외 기능들은 시뮬레이터에서 테스트 가능하다 
 
 
-### 종현 : 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오
+### 종현 : [앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오](https://znf.kr/post/7/)
 
-- 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있고, 상태 변화에 따라 다른 동작을 처리하기 위한 델리게이트 메서드들을 설명하시오.
-
-https://developer.apple.com/documentation/uikit/app_and_environment
-
-- 포어그라운드에 있을 때는 iOS가 못만드는걸 제외하고 제약사항이 없다. 
-
-- background에 있을 때 
-* Audio communication using AirPlay, or Picture in Picture video.
-* Location-sensitive services for users.
-* Voice over IP.
-* Communication with an external accessory.
-* Communication with Bluetooth LE accessories, or conversion of the device into a Bluetooth LE accessory. 
-* Regular updates from a server.
-* Support for Apple Push Notification service (APNs).
-- 이 것들을 제외하고는 background 에선 실행을 시킬 순 있지만 언제나 메모리 부족으로 종료될 수 있다.
-
-- 상태 변화에 따라 다른 동작을 처리하기 위한  Delegate Method는 자신이 어떤 방식으로 만드는 지에 따라 다르다.
-
-- scene Delegate를 사용한다면
-```
-func sceneWillResignActive(_ scene: UIScene) {}
-func sceneWillEnterForeground(_ scene: UIScene) {}
-func sceneDidEnterBackground(_ scene: UIScene) {}
-func sceneDidBecomeActive(_ scene: UIScene) {}
-func sceneDidDisconnect(_ scene: UIScene) {}
-```
-- sceneWillResignActive -> inactive
-- sceneDidEnterBackground -> background
-- sceneWillEnterForeground -> foreground
-- sceneDidBecomeActive -> active
-
-- scene Delegate를 사용하지 않는다면 
-```
-func applicationWillResignActive(_ application: UIApplication) {}
-func applicationDidEnterBackground(_ application: UIApplication) {}
-func applicationWillEnterForeground(_ application: UIApplication) {}
-func applicationDidBecomeActive(_ application: UIApplication) {}
-func applicationWillTerminate(_ application: UIApplication) {}
-```
-- applicationWillResignActive -> inactive
-- applicationDidEnterBackground -> background
-- applicationWillEnterForeground -> foreground
-- applicationDidBecomeActive -> active
-
-- inactive + active = foreground 이라고 한다.
 
 
 ### 혜지: [scene delegate에 대해 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-scene-delegate에-대해-설명하시오)
@@ -277,44 +152,8 @@ func applicationWillTerminate(_ application: UIApplication) {}
 UIKit에서 Safe Area 프로퍼티와 메서드를 가지는 클래스들: UIView, UIViewController, UIScrollView, UITableView, UIColelctionView
 
 ### 지혜: [Left Constraint 와 Leading Constraint 의 차이점을 설명하시오](https://www.zehye.kr/ios/2020/04/02/11iOS_leading_trailing_left_right/)
-### 종현: 오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)
+### 종현: [오토레이아웃을 코드로 작성하는 방법은 무엇인가? (3가지)](https://znf.kr/post/6/)
 
-
-1. Anchor를 사용하는 방법
-- Anchor는 iOS 9.0이후부터 지원하는 AutoLayout방법
-```
-let subView = UIView.init()
-subView.backgroundColor = UIColor.red
-self.view.addSubview(subView)
- 
-subView.translatesAutoresizingMaskIntoConstraints = false
-subView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20.0).isActive = true
-subView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
-subView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
-subView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isActive = true
-```
-
-2. NSLayoutConstraint 를 사용하는 방법
-- NSLayoutConstraint는 이전부터 지원하는 AutoLayout방법
-- Storyboard에서 Autolayout을 한다고 하면 이 방법이다.
-```
-let subView = UIView.init()
-subView.backgroundColor = UIColor.red
-subView.translatesAutoresizingMaskIntoConstraints = false
-self.view.addSubview(subView)
-
-let widthConstraint = NSLayoutConstraint.init(item: subView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
-subView.addConstraint(heightConstraint)
-subView.addConstraint(widthConstraint)
-let centerX = NSLayoutConstraint.init(item: subView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1.0, constant: 0)
-let centerY = NSLayoutConstraint.init(item: subView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1.0, constant: 0)
-self.view.addConstraint(centerX)
-self.view.addConstraint(centerY)
-```
-
-3. Auto Layout Visual Format Language -> 안쓴다. 쓴다면 그 사람은 이상한 사람이니 조심해라.
-
-https://www.raywenderlich.com/277-auto-layout-visual-format-language-tutorial
 
 ### 수민: hugging, resistance에 대해서 설명하시오
 huggin 과 resistance는 intrinsicContentSize를 알아야 하는데
@@ -377,71 +216,7 @@ private class SomePrivateClass {                // explicitly private class
 ```
 -> [더 자세한 예시](https://zeddios.tistory.com/383)
 
-### 종현: defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오
-- defer란 현재 함수를 벗어날 때 실행한다는 예약이다. 
-- 아래는 예제문이다.
-```
-var value = "Hello"
-func b() -> String {
-    defer {
-        value.append("world")
-    }
-    return value
-}
-print("B : \(b())")
-```
-- 아래 두개의 구문의 비슷해보이지만 위의 defer구문과 같은 역활을 하는 함수를 아래꺼이다.
-```
-value = "Hello"
-func c() -> String {
-    value.append("world")
-    return value
-}
-print("C : \(c())")
-```
-```
-value = "Hello"
-func d() -> String {
-    var f = value
-    value.append("world")
-    return f
-}
-print("D : \(d())")
-```
-- defer는 스택으로 되어있기에 들어온 순서의 역순으로 실행된다. 
-- 1,2,3이 들어왓으면 3,2,1로 나간다.
-```
-func e() {
-    do {
-        defer{
-            print("1")
-        }
-        defer{
-            print("2")
-        }
-        defer{
-            print("3")
-        }
-    }
-}
-print("E : 실행")
-e()
-print("E : 끝")
-```
-```
-func f() {
-    guard let fileURL = Bundle.main.url(forResource: "sample", withExtension: "txt") else {
-        return
-    }
-    do {
-        let content = try String(contentsOf: fileURL)
-        print("Content : \(content)")
-    }catch {
-        print("Something went wrong")
-    }
-}
-f()
-```
+### 종현: [defer란 무엇인지 설명하시오.  / defer가 호출되는 순서는 어떻게 되고, defer가 호출되지 않는 경우를 설명하시오](https://znf.kr/post/4/)
 
 ### 혜지: [생성자(designated/convenience/required)의 차이점과 특징을 설명하시오](https://github.com/khyeji98/interview-study/blob/master/README.md#-생성자designatedconveniencerequired의-차이점과-특징을-설명하시오)
 ### 지혜: [프로토콜 지향 프로그래밍에 대해서 설명하시오](https://www.zehye.kr/ios/2020/04/03/12iOS_protocol_programming/)
@@ -456,22 +231,7 @@ f()
 
 그러나 mutating 사용하여 특정 메소드 내에서 구조체, 열거형의 프로퍼티 수정 가능
 
-### 종현: 탈출 클로저에 대하여 설명하시오
-
-1. Closure의 의미
- - Apple 공식 
- - Closures are self-contained blocks of functionality that can be passed around and used in your code
- - 클로저는 코드내에서 사용가능한 독립된 기능 블록이다.
-  { (parameters) -> return type in
-      statements
-  }
-  이런식으로 사용된다.
-2. Closure의 사용처 
- - 제일 많이 사용되는 사용처
- - 경험상 Api 호출할 때
- - CustomView만들 때
-    init(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)? = nil)
-    이런식으로 우리가 만든 Custom View 도 설정 가능하다.
+### 종현: [탈출 클로저에 대하여 설명하시오](https://znf.kr/post/3/)
 
 ### 수민: Extension에 대해 설명하시오
 익스텐션은 구조체, 클래스, 열거형, 프로토콜 타입에 새로운 기능을 추가할 수 있는 기능인데, 기능을 추가하려는 타입의 구현된 소스 코드를 알지 못하거나 볼수 없다해도, 타입만 알고 있다면 그 타입의 기능을 확장 할 수 있다. 
@@ -559,20 +319,8 @@ GCD는 클로저 블록 안에 있는 특정 작업을 큐에 올리고, 해당 
 클래스는 레퍼런스 타입, 구조체는 값 타입입니다. 즉, 구조체가 파라미터로 전달될 때 스레드에 안전(Thread-safe)합니다.
 
 
-### 종현: MVC 구조에 대해 블록 그림을 그리고, 각 역할과 흐름을 설명하시오
+### 종현: [MVC 구조에 대해 블록 그림을 그리고, 각 역할과 흐름을 설명하시오](https://znf.kr/post/5/)
 
-![mvc](https://user-images.githubusercontent.com/59017672/77244438-24e30100-6c58-11ea-949b-c94951cb2056.jpg)
-
-M - Model : 소프트웨어에서 데이터를 의미
-V - View : 사용자에게 보여지는 부분을 의미
-C - Controller : 사용자 입력 받는 부분을 의미
-
-User -> C -> M -> C -> V -> User
-유저는 Controller를 통해 Application에 입력을 하고, Controller를 입력받은 부분을 Model에서 데이터 처리한후 Controller에서 View에 보여줘 유저에게 Response을 보여준다.
-
-Model : 예) NSObject
-View : 예) Storyboard, UIView
-Controller : 예) ViewController
 
 ### 혜지: [프로토콜이란 무엇인지 설명하시오](https://github.com/khyeji98/interview-study#프로토콜)
 
