@@ -42,7 +42,7 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 
 하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
 
-### 종현 : App Bundle의 구조와 역할에 대해 설명하시오.
+### 종현 : [App Bundle의 구조와 역할에 대해 설명하시오.](https://znf.kr/post/1/)
 
 ## 2020-04-23
 
