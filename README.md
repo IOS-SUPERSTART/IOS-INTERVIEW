@@ -49,7 +49,36 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 - 분기할때의 방법은 두가지 정도가 있는데 
     1. 각 테이블 뷰를 전역으로 가지고 있다가 메서드 인자중 하나인 tableView와 비교하는 것
     2. 각 테이블 뷰를 생성할때 Tag 값을 지정하고, 메서드 인자인 TableView의 Tag 값을 확인 하여 처리하는 방법이 있습니다. 
+```swift
+ovveride func viewDidLoad(){
+super.viewDidLoad()
 
+topTableView.delegate = self
+topTableView.dataSource = self
+
+bottomTableView.delegate = self
+battomTableView.dataSource = self
+
+// tag로 구분 
+TopTalbleView.tag = 1
+bottomTalbleView.tag = 1
+}
+``` 
+```swift
+//MARK: - tableView delegate
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    let cell = tableView.dequeueReusableCell(WithIdentifier: "Cell", for: indexPath)
+    
+    if tableView.tag == 1 {
+        cell.taxtLabel?.text = "Top Table view \(indexPath.row)"
+    }
+    if tableView.tag == 2 {
+        cell.taxtLabel?.text = "bottom Table View \(indexPath.row)"    
+    }
+    return cell
+}
+
+```
 
 ### 종현 : [App Bundle의 구조와 역할에 대해 설명하시오.](https://znf.kr/post/1/)
 
