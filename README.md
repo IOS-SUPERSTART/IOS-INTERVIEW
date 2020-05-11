@@ -12,7 +12,10 @@
 - 대부분의 앱은 기기의 기본화면에 앱의 콘텐츠를 표시하는 하나의 Window만 있으면 됩니다.
 - UIWindow는 UIView의 하위클래스이다.
 
-UINavigationController 의 역할이 무엇인지 설명하시오.
+### 수민 : [UINavigationController 의 역할이 무엇인지 설명하시오.](https://jeonsumin.github.io/blog/ios/navigation-Bar)
+- 네비게이션 컨트롤러는 컨테이너 뷰 컨트롤러로써 네비게이션 스택을 사용하여 다른 뷰 컨트롤러를 관리하는 역할을 합니다. 
+- 두개의 뷰를 화면에 표시하여 하나는 내비게이션 스택뷰에 포함된 최상위 컨텐트 뷰 컽르롤러의 콘텐츠를 나나태는 뷰 와 내비게이션 컨트롤러가 직접 관리하는 뷰가 있습니다. 
+- 네비게이션 인터페이스의 변화에 따른 특정 액션을 동작하도록 하기 위해 내비게이션 델리게이트 객체를 사용할 수 있습니다. 
 
 ### 혜지: [모든 View Controller 객체의 상위 클래스는 무엇이고 그 역할은 무엇인가?](https://github.com/khyeji98/interview-study/blob/master/README.md#-모든-view-controller-객체의-상위-클래스는-무엇이고-그-역할은-무엇인가)
 
@@ -40,7 +43,13 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 
 ### 지혜: TableView를 동작 방식과 화면에 Cell을 출력하기 위해 최소한 구현해야 하는 DataSource 메서드를 설명하시오.
 
-하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
+### 수민 : 하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
+- UIViewController 내에서 UITableViewDataSource 프로토콜 내 함수를 구현하게 되면 여러개의 UITableView가 모두 같은 메소드를 호출하기 때문에 뜻하지 않은 결과를 얻을 수 있는데 
+- 이런 경우 UITableViewDataSource 프로토콜 내의 함수에서 분기해서 처리하면 됩니다. 
+- 분기할때의 방법은 두가지 정도가 있는데 
+    1. 각 테이블 뷰를 전역으로 가지고 있다가 메서드 인자중 하나인 tableView와 비교하는 것
+    2. 각 테이블 뷰를 생성할때 Tag 값을 지정하고, 메서드 인자인 TableView의 Tag 값을 확인 하여 처리하는 방법이 있습니다. 
+
 
 ### 종현 : [App Bundle의 구조와 역할에 대해 설명하시오.](https://znf.kr/post/1/)
 
