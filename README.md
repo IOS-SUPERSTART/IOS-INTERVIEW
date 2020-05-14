@@ -2,7 +2,7 @@
 
 ## 2020-05-07 
 
-### 지혜: View 객체에 대해 설명하시오.
+### 지혜: [View 객체에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/28/iOS_view_window/)
 
 ### 종현 : [UIView 에서 Layer 객체는 무엇이고 어떤 역할을 담당하는지 설명하시오.](https://znf.kr/post/2/)
 
