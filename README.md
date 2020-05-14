@@ -41,7 +41,7 @@ Delegate Pattern이 오직 지정된 객체랑 상호작용할 수 있는 반면
 
 ### 혜지: [UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?](https://github.com/khyeji98/interview-study/blob/master/README.md#-uikit-클래스들을-다룰-때-꼭-처리해야하는-애플리케이션-쓰레드-이름은-무엇인가)
 
-### 지혜: TableView를 동작 방식과 화면에 Cell을 출력하기 위해 최소한 구현해야 하는 DataSource 메서드를 설명하시오.
+### 지혜: [TableView를 동작 방식과 화면에 Cell을 출력하기 위해 최소한 구현해야 하는 DataSource 메서드를 설명하시오](https://www.zehye.kr/ios/2020/02/15/13iOS_datasource_and_delegate/)
 
 ### 수민 : 하나의 View Controller 코드에서 여러 TableView Controller 역할을 해야 할 경우 어떻게 구분해서 구현해야 하는지 설명하시오.
 - UIViewController 내에서 UITableViewDataSource 프로토콜 내 함수를 구현하게 되면 여러개의 UITableView가 모두 같은 메소드를 호출하기 때문에 뜻하지 않은 결과를 얻을 수 있는데 
