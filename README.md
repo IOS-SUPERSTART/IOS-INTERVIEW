@@ -1,5 +1,10 @@
 # IOS-INTERVIEW
 
+## 2020-05-22
+
+1. 프레임워크와 라이브러리의 차이
+2. ARC란 
+
 ## 2020-05-07 
 
 ### 지혜: [View 객체에 대해 설명하시오](https://www.zehye.kr/ios/2020/03/28/iOS_view_window/)
