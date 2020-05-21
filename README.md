@@ -3,7 +3,9 @@
 ## 2020-05-22
 
 1. 프레임워크와 라이브러리의 차이
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/etc/2020/05/21/etc_framework_library/)
 2. ARC란 
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/18/11swift_arc/)
 
 ## 2020-05-07 
 
