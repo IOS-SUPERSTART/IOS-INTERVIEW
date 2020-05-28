@@ -12,6 +12,7 @@
     - 수민 : [View Controller 생명주기](https://jeonsumin.github.io/blog/interview/viewControllerLifCycle) 
     - 혜지 : [ViewController 생명주기](https://github.com/khyeji98/interview-study/blob/master/README.md#-viewcontroller-lifecycle에-대해-설명하시오)
     - 종현 : [ViewController 생명주기1](https://znf.kr/post/10/)
+    
             [ViewController 생명주기2](https://znf.kr/post/14/)
     
 ## 2020-05-22
