@@ -4,7 +4,7 @@
 
 1. MVC 디자인 패턴
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/22/iOS_singleton_mvc_pattern/)
-    - 혜지 : <https://github.com/khyeji98/interview-study/blob/master/README.md#-mvc에-대해-설명하시오>
+    - 혜지 : [MVC 디자인 패턴](https://github.com/khyeji98/interview-study/blob/master/README.md#-mvc에-대해-설명하시오)
 2. View Controller 생명주기 
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
 
