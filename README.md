@@ -1,5 +1,12 @@
 # IOS-INTERVIEW
 
+## 2020-05-28
+
+1. MVC 디자인 패턴
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/22/iOS_singleton_mvc_pattern/)
+2. View Controller 생명주기 
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
+
 ## 2020-05-22
 
 1. 프레임워크와 라이브러리의 차이
