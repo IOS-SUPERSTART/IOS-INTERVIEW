@@ -3,15 +3,18 @@
 ## 2020-05-28
 
 1. MVC 디자인 패턴
-    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/22/iOS_singleton_mvc_pattern/)
+    - 지혜 : [블로그 바로가기](https://www.zehye.kr/ios/2020/04/22/iOS_singleton_mvc_pattern/)
     - 혜지 : [MVC 디자인 패턴](https://github.com/khyeji98/interview-study/blob/master/README.md#-mvc에-대해-설명하시오)
+    - 수민 : [MVC 디자인 패턴](https://jeonsumin.github.io/blog/interview/mvc)
 2. View Controller 생명주기 
-    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
-
+    - 지혜 : [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
+    - 수민 : [View Controller 생명주기](https://jeonsumin.github.io/blog/interview/viewControllerLifCycle) 
+    
 ## 2020-05-22
 
 1. 프레임워크와 라이브러리의 차이
-    - 지혜: [블로그 바로가기](https://www.zehye.kr/etc/2020/05/21/etc_framework_library/)
+    - 지혜 : [블로그 바로가기](https://www.zehye.kr/etc/2020/05/21/etc_framework_library/)
+    - 수민 : [프레임워크와 라이브러리의 차이](https://jeonsumin.github.io/blog/interview/FrameworkAndLibrary)
 2. ARC란 
     - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/18/11swift_arc/)
 
