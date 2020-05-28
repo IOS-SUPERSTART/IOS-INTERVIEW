@@ -9,6 +9,7 @@
 2. View Controller 생명주기 
     - 지혜 : [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
     - 수민 : [View Controller 생명주기](https://jeonsumin.github.io/blog/interview/viewControllerLifCycle) 
+    - 혜지 : [ViewController 생명주기](https://github.com/khyeji98/interview-study/blob/master/README.md#-viewcontroller-lifecycle에-대해-설명하시오)
     
 ## 2020-05-22
 
