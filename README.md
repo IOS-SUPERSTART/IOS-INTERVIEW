@@ -1,5 +1,16 @@
 # IOS-INTERVIEW
 
+## 2020-06-04
+
+1. class / struct / enum 
+    - 지혜 
+        - [블로그1, class와 struct](https://www.zehye.kr/swift/2020/01/15/17-swift_grammer10/)
+        - [블로그2, enum](https://www.zehye.kr/swift/2020/01/15/18-swift_grammer11/)
+        - [블로그3, 값타입과 참조타입: class, struct, enum 비교](https://www.zehye.kr/swift/2020/01/15/19swift_grammer12/)
+
+2. 옵셔널과 관련된 개념 공부
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/03/05/swift_optional_interview/)
+
 ## 2020-05-28
 
 1. MVC 디자인 패턴
