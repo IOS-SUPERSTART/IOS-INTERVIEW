@@ -4,6 +4,7 @@
 
 1. GCD 
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/23/11iOS_GCD_NSOperation_queue/)
+    - 종현: [블로그](https://znf.kr/post/21/)
 
 ## 2020-06-04
 
