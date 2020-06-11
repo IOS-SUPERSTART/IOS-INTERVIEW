@@ -15,6 +15,7 @@
 
 2. 옵셔널과 관련된 개념 공부
     - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/03/05/swift_optional_interview/)
+    - 혜지 : [옵셔널](https://github.com/khyeji98/interview-study/blob/master/README.md#-optional이란-무엇인지-설명하시오)
 
 ## 2020-05-28
 
