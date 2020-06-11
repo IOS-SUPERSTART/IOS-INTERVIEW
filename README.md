@@ -1,5 +1,10 @@
 # IOS-INTERVIEW
 
+## 2020-06-11
+
+1. GCD 
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/23/11iOS_GCD_NSOperation_queue/)
+
 ## 2020-06-04
 
 1. class / struct / enum 
