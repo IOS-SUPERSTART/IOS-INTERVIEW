@@ -37,8 +37,10 @@
 1. 프레임워크와 라이브러리의 차이
     - 지혜 : [블로그 바로가기](https://www.zehye.kr/etc/2020/05/21/etc_framework_library/)
     - 수민 : [프레임워크와 라이브러리의 차이](https://jeonsumin.github.io/blog/interview/FrameworkAndLibrary)
+    - 종현 : [블로그](https://znf.kr/post/17/)
 2. ARC란 
-    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/18/11swift_arc/)
+    - 지혜 : [블로그 바로가기](https://www.zehye.kr/swift/2020/01/18/11swift_arc/)
+    - 종현 : [블로그](https://znf.kr/post/18/)
 
 ## 2020-05-07 
 
