@@ -14,10 +14,18 @@
         - [블로그2, enum](https://www.zehye.kr/swift/2020/01/15/18-swift_grammer11/)
         - [블로그3, 값타입과 참조타입: class, struct, enum 비교](https://www.zehye.kr/swift/2020/01/15/19swift_grammer12/)
     - 혜지 : [class, struct, enum](https://github.com/khyeji98/interview-study/blob/master/README.md#-class-struct-enum)
+    - 홍석 : 
+        - [class](https://www.notion.so/9685b234ae81442380e7ff842c90c197)
+        - [struct](https://www.notion.so/715861829cc944d2838b0faf22982dad)
+        - [enum](https://www.notion.so/2624caefb0d44b429b0623b7f88702aa)
 
 2. 옵셔널과 관련된 개념 공부
-    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/03/05/swift_optional_interview/)
+    - 지혜 : [블로그 바로가기](https://www.zehye.kr/swift/2020/03/05/swift_optional_interview/)
     - 혜지 : [옵셔널](https://github.com/khyeji98/interview-study/blob/master/README.md#-optional이란-무엇인지-설명하시오)
+    - 홍석 : 
+        - [optional](https://www.notion.so/3ca41e0e8cda4bc3a6f634913cd4263c)
+        - [optional binding](https://www.notion.so/24de2b9afdeb40a88e04e9b012bd38aa)
+        - [optional chaining](https://www.notion.so/57b5e0953169468cb575448a800e802a)
 
 ## 2020-05-28
 
