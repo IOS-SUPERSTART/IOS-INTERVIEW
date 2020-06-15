@@ -26,11 +26,13 @@
     - 혜지 : [MVC 디자인 패턴](https://github.com/khyeji98/interview-study/blob/master/README.md#-mvc에-대해-설명하시오)
     - 수민 : [MVC 디자인 패턴](https://jeonsumin.github.io/blog/interview/mvc)
     - 종현 : [디자인 패턴](https://znf.kr/post/19/)
+    - 홍석 : [MVC](https://www.notion.so/MVC-a990035d22f44a73b75e2a337d57a863)
 2. View Controller 생명주기 
     - 지혜 : [블로그 바로가기](https://www.zehye.kr/ios/2020/02/12/11iOS_viewcontroller_lifecycle/)
     - 수민 : [View Controller 생명주기](https://jeonsumin.github.io/blog/interview/viewControllerLifCycle) 
     - 혜지 : [ViewController 생명주기](https://github.com/khyeji98/interview-study/blob/master/README.md#-viewcontroller-lifecycle에-대해-설명하시오)
     - 종현 : [ViewController 생명주기1](https://znf.kr/post/10/) / [ViewController 생명주기2](https://znf.kr/post/14/)
+    - 홍석 : [ViewController 생명주기](https://www.notion.so/View-Controller-Life-Cycle-cc36f449a061422eb7e294ae60aff993)
     
 ## 2020-05-22
 
