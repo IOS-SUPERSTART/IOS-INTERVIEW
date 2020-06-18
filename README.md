@@ -15,7 +15,7 @@
 1. GCD 
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/23/11iOS_GCD_NSOperation_queue/)
     - 종현: [블로그](https://znf.kr/post/21/)
-    - 흉석: [링크](https://www.notion.so/GCD-d759b4da48d048a0a37cec2da95b38ed)
+    - 홍석: [링크](https://www.notion.so/GCD-d759b4da48d048a0a37cec2da95b38ed)
 
 ## 2020-06-04
 
