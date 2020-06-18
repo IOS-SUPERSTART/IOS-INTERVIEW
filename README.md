@@ -1,5 +1,15 @@
 # IOS-INTERVIEW
 
+## 2020-06-18
+
+1. 프로토콜 프로그래밍
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/03/12iOS_protocol_programming/)
+    
+
+2. delegate
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/02/07/11ios_delegate2/)
+    
+
 ## 2020-06-11
 
 1. GCD 
