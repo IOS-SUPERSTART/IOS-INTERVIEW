@@ -1,5 +1,11 @@
 # IOS-INTERVIEW
 
+## 2020-06-25
+
+1. 앱 생명주기
+
+2. 오토레이아웃: hugging, resistance, intrinsic size, safearea
+
 ## 2020-06-18
 
 1. 프로토콜 프로그래밍
