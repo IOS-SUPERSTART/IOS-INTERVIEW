@@ -3,8 +3,10 @@
 ## 2020-06-25
 
 1. 앱 생명주기
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/16/11iOS_application_state/)
 
 2. 오토레이아웃: hugging, resistance, intrinsic size, safearea
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/01/22/15swift_auto_layout/)
 
 ## 2020-06-18
 
