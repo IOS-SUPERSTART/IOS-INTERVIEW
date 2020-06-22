@@ -12,10 +12,12 @@
 
 1. 프로토콜 프로그래밍
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/03/12iOS_protocol_programming/)
+    - 홍석: [노션1](https://www.notion.so/Protocol-38525840c4ed40a9965280ac7824fd40), [노션2](https://www.notion.so/7420d28d73eb456c904cc007df4b2dbb)
     
 
 2. delegate
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/02/07/11ios_delegate2/)
+    - 홍석: [노션](https://www.notion.so/Delegation-a2a3f3020d9440818c9c69ff376ff267)
     
 
 ## 2020-06-11
