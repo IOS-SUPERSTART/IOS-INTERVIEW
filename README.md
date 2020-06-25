@@ -4,9 +4,11 @@
 
 1. 앱 생명주기
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/04/16/11iOS_application_state/)
+    - 홍석: [노션 바로가기](https://www.notion.so/iOS-95f8555378bf4d34ae1b03268a0ae5d2)
 
 2. 오토레이아웃: hugging, resistance, intrinsic size, safearea
     - 지혜: [블로그 바로가기](https://www.zehye.kr/ios/2020/01/22/15swift_auto_layout/)
+    - 홍석: [노션 바로가기](https://www.notion.so/AutoLayout-76f483d615a743bdb03becd848a12d54)
 
 ## 2020-06-18
 
