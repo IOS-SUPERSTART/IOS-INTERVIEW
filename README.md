@@ -9,6 +9,7 @@
 2. Swift 고차함수
     - 홍석: [노션 바로가기](https://www.notion.so/ff1bf4e3971b4d5d958689566da4135c)
     - 지혜: [블로그 바로가기](https://github.com/IOS-SUPERSTART/Algorithm/blob/master/array_zehye.md)
+        - [블로그 하나더 추가](https://www.zehye.kr/swift/2020/01/16/19swift_grammer23/)
 
 ## 2020-06-25
 
