@@ -5,6 +5,7 @@
 1. 접근 제어자
     - 홍석: [노션 바로가기](https://www.notion.so/2e893ee919d842b79a031edda4bb2b75)
     - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/17/12swift_access_control/)
+    - 종현: [블로그 바로가기](https://znf.kr/post/22/)
 
 2. Swift 고차함수
     - 홍석: [노션 바로가기](https://www.notion.so/ff1bf4e3971b4d5d958689566da4135c)
