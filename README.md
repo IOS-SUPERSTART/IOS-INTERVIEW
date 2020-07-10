@@ -1,5 +1,13 @@
 # IOS-INTERVIEW
 
+## 2020-07-16
+
+1. 중첩타입
+
+2. KVO, notification
+
+3. generic
+
 ## 2020-07-02
 
 1. 접근 제어자
