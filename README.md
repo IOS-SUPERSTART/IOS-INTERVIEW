@@ -6,6 +6,7 @@
     - 홍석: [노션 바로가기](https://www.notion.so/cd5ff88860aa42acaac61d5202cb975a)
 
 2. KVO, notification
+    - 홍석: [노션 바로가기](https://www.notion.so/KVO-notification-47af7621099a4c228a93781c5daf750d)
 
 3. generic
 
