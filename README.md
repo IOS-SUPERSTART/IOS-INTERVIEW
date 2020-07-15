@@ -4,12 +4,15 @@
 
 1. 중첩타입
     - 홍석: [노션 바로가기](https://www.notion.so/cd5ff88860aa42acaac61d5202cb975a)
+    - 지혜: [블로그 바로가기]
 
 2. KVO, notification
     - 홍석: [노션 바로가기](https://www.notion.so/KVO-notification-47af7621099a4c228a93781c5daf750d)
+    - 지혜: [블로그 바로가기]
 
 3. generic
     - 홍석: [노션 바로가기](https://www.notion.so/Generic-3e941fe9a10f4443a9cec655b2d7a155)
+    - 지혜: [블로그 바로가기]
 
 ## 2020-07-02
 
