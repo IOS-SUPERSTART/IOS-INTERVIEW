@@ -8,11 +8,14 @@
 
 2. KVO, notification
     - 홍석: [노션 바로가기](https://www.notion.so/KVO-notification-47af7621099a4c228a93781c5daf750d)
-    - 지혜: [블로그 바로가기]
+    - 지혜
+        - [Notification](https://www.zehye.kr/ios/2020/04/10/13iOS_notification/)
+        - [KVO](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
 
 3. generic
     - 홍석: [노션 바로가기](https://www.notion.so/Generic-3e941fe9a10f4443a9cec655b2d7a155)
-    - 지혜: [블로그 바로가기]
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/16/20swift_generic/)
+        - [Equatable](https://www.zehye.kr/swift/2020/07/16/11swift_equatable/)
 
 ## 2020-07-02
 
