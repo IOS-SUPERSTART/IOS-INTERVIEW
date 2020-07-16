@@ -12,6 +12,7 @@
     - 지혜
         - [Notification](https://www.zehye.kr/ios/2020/04/10/13iOS_notification/)
         - [KVO](https://www.zehye.kr/ios/2020/03/19/11iOS_KVO/)
+    - 혜지 : [KVO, notification](https://github.com/khyeji98/interview-study/blob/master/iOS.md#notification)
 
 3. generic
     - 홍석: [노션 바로가기](https://www.notion.so/Generic-3e941fe9a10f4443a9cec655b2d7a155)
