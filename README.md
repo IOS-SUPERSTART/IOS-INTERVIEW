@@ -1,5 +1,11 @@
 # IOS-INTERVIEW
 
+## 2020-07-23
+
+1. 클로저
+
+2. Equatable, Hashable
+
 ## 2020-07-16
 
 1. 중첩타입
