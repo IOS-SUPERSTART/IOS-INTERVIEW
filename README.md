@@ -4,7 +4,9 @@
 
 1. 클로저
 
-2. Equatable, Hashable
+2. Equatable
+
+3. Hashable
 
 ## 2020-07-16
 
