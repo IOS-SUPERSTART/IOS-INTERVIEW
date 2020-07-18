@@ -3,10 +3,10 @@
 ## 2020-07-23
 
 1. 클로저
+    - 홍석: [노션 바로가기](https://www.notion.so/48915d00bd9e470ebe2571e432218b0b)
 
-2. Equatable
-
-3. Hashable
+2. Equatable, Hashable (Swift 기본 프로토콜)
+    - 홍석: [노션 바로가기](https://www.notion.so/Equatable-Hashable-2bd6dfd2c8fb4e028a4ba870764d477e)
 
 ## 2020-07-16
 
