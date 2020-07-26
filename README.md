@@ -5,9 +5,13 @@
 1. 클로저
     - 홍석: [노션 바로가기](https://www.notion.so/48915d00bd9e470ebe2571e432218b0b)
     - 혜지: [클로저(feat.고차함수)](https://github.com/khyeji98/khyeji98.github.io/blob/master/README.md#closure)
+    - 지혜: [블로그 바로가기](https://www.zehye.kr/swift/2020/01/15/20swift_grammer13/)
 
 2. Equatable, Hashable (Swift 기본 프로토콜)
     - 홍석: [노션 바로가기](https://www.notion.so/Equatable-Hashable-2bd6dfd2c8fb4e028a4ba870764d477e)
+    - 지혜
+        - 1. [Hashable](https://www.zehye.kr/swift/2020/07/22/swift_hashable/)
+        - 2. [Equatable](https://www.zehye.kr/swift/2020/07/16/11swift_equatable/)
 
 ## 2020-07-16
 
