@@ -14,6 +14,7 @@
     - 지혜
         - 1. [Hashable](https://www.zehye.kr/swift/2020/07/22/swift_hashable/)
         - 2. [Equatable](https://www.zehye.kr/swift/2020/07/16/11swift_equatable/)
+    - 혜지 : [Equatable, Hashable](https://github.com/khyeji98/khyeji98.github.io/blob/master/README.md#equatable)
 
 ## 2020-07-16
 
